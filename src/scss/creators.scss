@@ -1,0 +1,168 @@
+.creators {
+    background-color: #F4F6FF;
+    padding: 120px 0;
+    @media (max-width: $md2+px) {
+        padding: 100px 0;
+    }
+    @media (max-width: $md3+px) {
+        padding: 80px 0;
+    }
+    @media (max-width: $md4+px) {
+        padding: 60px 0;
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 90px;
+        @media (max-width: $md2+px) {
+            margin-bottom: 70px;
+        }
+        @media (max-width: $md4+px) {
+            margin-bottom: 50px;
+        }
+    }
+    &__body {
+        display: flex;
+        align-items: center;
+        max-width: 870px;
+        margin: 0 auto;
+        gap: 24%;
+        @media (max-width: $md2+px) {
+            justify-content: center;
+            gap: 15%;
+        }
+        @media (max-width: $md3+px) {
+            flex-direction: column;
+            margin: 0 auto;
+        }
+    }
+    &__img {
+        position: relative;
+        width: 238px;
+        height: 238px;
+        @media (max-width: $md3+px) {
+            margin: 0 0 70px 0;
+        }
+        @media (max-width: $md4+px) {
+            width: 200px;
+            height: 200px;
+        }
+    }
+    &__inner1, &__inner2, &__inner3, &__inner4, &__inner5, &__twitter {
+        position: absolute;
+        width: 238px;
+        height: 238px;
+        top: 0;
+        left: 0;
+        @media (max-width: $md4+px) {
+            width: 200px;
+            height: 200px;
+            margin: 0 0 70px 0;
+        }
+    }
+    &__inner1 {
+        box-shadow: 0px 7.93333px 15.8667px rgba(96, 117, 208, 0.15696), 0px 17.6px 31.7333px rgba(96, 117, 208, 0.470061), inset 0px -1.98333px 3.96667px rgba(133, 133, 133, 0.295618), inset 0px -7.08333px 5.95px rgba(0, 0, 0, 0.454026), inset 0px 7.08333px 5.95px rgba(200, 234, 255, 0.776224);
+        border-radius: 66.2433px;
+    }
+    &__inner2 {
+        background: linear-gradient(180deg, rgba(244, 246, 255, 0.6) 12.3%, rgba(217, 222, 242, 0.6) 100%), linear-gradient(180deg, #F4F6FF 0%, #F4F6FF 100%);
+        background-blend-mode: multiply, normal;
+        box-shadow: inset 0px -7.08333px 5.95px rgba(0, 0, 0, 0.0920291);
+        border-radius: 66.2433px;
+    }
+    &__inner3 {
+        background: linear-gradient(180deg, #E9ECFA 0%, #F4F6FF 100%);
+        filter: blur(12.1889px);
+        border-radius: 59.5px;
+    }
+    &__inner4 {
+        background: linear-gradient(180deg, rgba(193, 245, 255, 0.417401) 0%, rgba(255, 255, 255, 9e-05) 47.2%);
+        mix-blend-mode: screen;
+        border-radius: 66.2433px;
+    }
+    &__inner5 {
+        background: linear-gradient(180deg, rgba(193, 245, 255, 0.417401) 0%, rgba(255, 255, 255, 9e-05) 47.2%);
+        mix-blend-mode: screen;
+        border-radius: 66.2433px;
+    }
+    &__twitter {
+        position: relative;
+        i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 113px;
+            background: linear-gradient(180deg, #4ECEF6 0%, #4E8FF6 53.77%, #226ADB 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            @media (max-width: $md4+px) {
+                font-size: 100px;
+            }
+        }
+    }
+    &__img::before {
+        content: '';
+        position: absolute;
+        width: 238px;
+        height: 238px;
+        top: 10px;
+
+        background: #6075D0;
+        mix-blend-mode: multiply;
+        opacity: 0.3;
+        filter: blur(31.2693px);
+        border-radius: 66.2433px;
+        @media (max-width: $md4+px) {
+            width: 200px;
+            height: 200px;
+            margin: 0 0 50px 0;
+        }
+    }
+    &__img::after {
+        content: '';
+        position: absolute;
+        width: 238px;
+        height: 238px;
+        top: 43px;
+        
+        background: #B3B8D1;
+        mix-blend-mode: multiply;
+        opacity: 0.28;
+        filter: blur(50.6778px);
+        border-radius: 66.2433px;
+        @media (max-width: $md4+px) {
+            width: 200px;
+            height: 200px;
+            margin: 0 0 50px 0;
+        }
+    }
+    &__list {
+        width: 48%;
+        @media (max-width: $md3+px) {
+            width: 80%;
+        }
+        @media (max-width: $md4+px) {
+            width: 90%;
+        }
+    }
+    &__item {
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        @media (max-width: $md4+px) {
+            margin-bottom: 20px;
+        }
+    }
+    &__icon {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__text {
+       
+    }
+}

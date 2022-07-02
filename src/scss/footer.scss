@@ -1,0 +1,127 @@
+.footer {
+    padding: 60px 0;
+    background-color: #1D1743;
+    color: #fff;
+    @media (max-width: $md4+px) {
+        padding: 50px 0;
+    }
+    &__content {
+        display: flex;
+        margin-bottom: 70px;
+        gap: 4%;
+        justify-content: space-around;
+        @media (max-width: $md3+px) {
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+        }
+        @media (max-width: $md4+px) {
+            margin-bottom: 50px;
+        }
+    }
+    &__item {
+        flex: 0 0 20%;
+        justify-self: center;
+        @media (max-width: $md3+px) {
+            flex: 0 0 45%;
+            margin-bottom: 30px;
+            &:nth-child(2n) {
+                margin-bottom: 0;
+            }
+        }
+        a {
+            color: #fff;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.footer-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    @media (max-width: $md3+px) {
+        text-align: center;
+    }
+}
+
+.support, .myaccount, .follow, .subscribe {
+    @media (max-width: $md3+px) {
+        text-align: center;
+    }
+}
+
+.support, .myaccount {
+    &__item {
+        margin-bottom: 10px;
+    }
+}
+
+.follow {
+    &__items {
+        i {
+            font-size: 30px;
+            margin-right: 10px;
+            transition: color .2s linear;
+        }
+    }
+}
+
+
+.subscribe {
+    &__input {
+        border: 1px solid #000;
+        border-radius: 5px;
+        padding: 10px 15px;
+        margin-bottom: 15px;
+        @media (max-width: $md3+px) {
+            max-width: 160px;
+            padding: 10px 8px;
+        }
+    }
+    &__btn {
+        vertical-align: middle;
+        height: 35px;
+        padding: 0px 25px;
+        background-color: #fff;
+        color: #5C7EFB;
+        &:hover {
+            background: #e3e3e3;
+        }
+        @media (max-width: $md3+px) {
+            margin: 0 auto;
+        }
+    }
+}
+
+
+.info {
+    display: flex;
+    @media (max-width: $md3+px) {
+        flex-direction: column;
+    }
+    &__copy {
+    }
+    &__cards {
+        display: flex;
+        @media (max-width: $md3+px) {
+            margin-bottom: 20px;
+        }
+    }
+    &__card {
+        img {
+            @media (max-width: $md4+px) {
+                width: 50px;
+                height: 35px;
+            }
+        }
+    }
+}

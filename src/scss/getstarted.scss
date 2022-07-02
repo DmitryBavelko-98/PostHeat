@@ -1,0 +1,110 @@
+.getstarted {
+    color: #fff;
+    background: radial-gradient(52.92% 139.37% at 36.32% 42.29%, #7E7EFB 0%, #6262E1 100%);
+    padding:70px 15px 0;
+    max-height: 630px;
+    overflow: hidden;
+    @media (max-width: $md2+px) {
+        padding-top: 60px;
+        max-height: 470px;
+    }
+    @media (max-width: $md3+px) {
+        padding:60px 0;
+    }
+    @media (max-width: $md4+px) {
+        padding:50px 0;
+    }
+    &__body {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        gap: 13%;
+        @media (max-width: $md2+px) {
+            gap: 10%;
+        }
+        @media (max-width: $md3+px) {
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &__content {
+        margin-top: 100px;
+        @media (max-width: $md2+px) {
+            flex: 0 0 35%;
+            margin-top: 50px;
+        }
+        @media (max-width: $md3+px) {
+            flex: 0 0 80%;
+            margin-top: 0px;
+        }
+    }
+    &__title {
+        color: #fff;
+        margin: 0 0 23px 0;
+        @media (max-width: $md3+px) {
+            text-align: center;
+            font-weight: 500;
+            font-size: 30px;
+        }
+        @media (max-width: $md4+px) {
+            font-size: 25px;
+        }
+    }
+    &__text {
+        margin: 0 0 70px 0;
+        font-size: 24px;
+        line-height: 28 / 24 *100%;
+        @media (max-width: $md2+px) {
+            font-size: 22px;
+            margin-bottom: 55px;
+        }
+        @media (max-width: $md3+px) {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+        @media (max-width: $md4+px) {
+            font-size: 18px;
+        }
+    }
+    &__links {
+        display: flex;
+        @media (max-width: $md3+px) {
+            justify-content: center;
+        }
+    }
+    &__link {
+        display: inline-block;
+        &:first-child {
+            margin: 0 24px 0 0;
+        }
+        @media (max-width: $md2+px) {
+            img {
+                max-width: 180px;
+                height: 55px;
+            }
+        }
+        @media (max-width: $md4+px) {
+            img {
+                max-width: 150px;
+                height: 45px;
+            }
+            &:first-child {
+                margin: 0 14px 0 0;
+            }
+        }
+    }
+    
+    &__iphone {
+        @media (max-width: $md2+px) {
+            max-width: 250px;
+        }
+        img {
+            @media (max-width: $md2+px) {
+                width: 100%;
+            }
+        }
+        @media (max-width: $md3+px) {
+            display: none;
+        }
+    }
+}

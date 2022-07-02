@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/head.html', {
+        "title": "PostHeat"
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/header.html', {}) 
+            <main>
+                <section id="intro" class="intro">
+                    <div class="intro__body container">
+                        <div class="intro__content">
+                            <h1 class="intro__title">A Simpler</h1>
+                            <h2 class="intro__subtitle">
+                                mailing list platform for <b>faster</b> results 👉
+                            </h2>
+                            <div class="intro__text">Build an engaging newsletter for your followers. 
+                                Create a marketing campaign for your startup. Keep it simple.
+                            </div>
+                            <div class="intro__btns">
+                                <button type="submit" class="intro__btn intro__btn_violet">No Credit Card Required</button>
+                                <button type="submit" class="intro__btn intro__btn_green">free 30 days trial</button>
+                                <button type="submit" class="intro__btn intro__btn_orange">cancel anytime</button>
+                            </div>
+                        </div>
+                        <div class="intro__form">
+                            <div class="intro__form-title">Sign Up</div>
+                            <form action="/" method="post" class="intro__signup signup">
+                                <div class="signup__fields">
+                                    <div class="signup__field">
+                                        <label class="signup__label">Email</label>
+                                        <input class="signup__input" type="email" name="name" placeholder="Email">
+                                    </div>
+                                    <div class="signup__field">
+                                        <label class="signup__label">Password</label>
+                                        <input class="signup__input" type="password" name="name" placeholder="Password">
+                                    </div>
+                                    <div class="signup__field">
+                                        <label class="signup__label">Verify Password</label>
+                                        <input class="signup__input" type="password" name="name" placeholder="Verify Password">
+                                    </div>
+                                </div>
+                                <button class="signup__btn" type="submit">start free trial</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="interface">
+                    <div class="interface__body container">
+                        <div class="interface__intro">
+                            <div class="interface__title title">Design, Write, and Send, all from the same page</div>
+                            <div class="interface__subtitle">A Streamlined Editor built with the Indie Hacker and Soloprenuer in mind
+                            </div>
+                        </div>
+                        <div class="interface__content">
+                            <div class="interface__screens">
+                                <img class="interface__screen interface__screen_create" src="./img/interface/create.jpg" alt="">
+                                <img class="interface__screen interface__screen_sidebar" src="./img/interface/Sidebar.svg" alt="">
+                            </div>
+                            <div class="interface__items">
+                                <div class="interface__item item-interface item-interface_purple">
+                                    <div class="item-interface__title">
+                                        <img src="./img/interface/envelope.svg" alt="" class="item-interface__icon">    
+                                        <div class="item-interface__text subtitle subtitle_white">Pre-Built Templates</div>
+                                    </div>
+                                    <div class="item-interface__info">Stop wasting time designing your own newsletter layouts. Quickly pick a pre-built layout and start writing.</div>
+                                </div>
+                                <div class="interface__item item-interface">
+                                    <div class="item-interface__title">
+                                        <img src="./img/interface/arrow.svg" alt="" class="item-interface__icon">    
+                                        <div class="item-interface__text subtitle">3rd Party Friendly</div>
+                                    </div>
+                                    <div class="item-interface__info">Need the email html for a 3rd party platform, or to send yourself? Export all html with inline styling with a single click of a button.</div>
+                                </div>
+                                <div class="interface__item item-interface">
+                                    <div class="item-interface__title">
+                                        <img src="./img/interface/check.svg" alt="" class="item-interface__icon">    
+                                        <div class="item-interface__text subtitle">Writer’s Block Cured</div>
+                                    </div>
+                                    <div class="item-interface__info">Connect your Twitter account and import tweets as you write. Grow and promote your newsletter with automatic re-Tweets when you import a Tweet into your newsletter.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="pricing">
+                    <div class="container">
+                        <div class="pricing__title title">
+                            Clear & Simple Pricing
+                        </div>
+                        <div class="pricing__cards">
+                            <div class="pricing__card card-pricing">
+                                <div class="card-pricing__info">
+                                    <div class="card-pricing__title">Build mail</div>
+                                    <div class="card-pricing__subtitle">No credit card required</div>
+                                    <div class="card-pricing__items">
+                                        <div class="card-pricing__item">
+                                            <img class="card-pricing__icon" src="./img/pricing/checkmark.svg" alt="">
+                                            <div class="card-pricing__text">Visual Drag</div>
+                                        </div>
+                                        <div class="card-pricing__item">
+                                            <img class="card-pricing__icon" src="./img/pricing/checkmark.svg" alt="">
+                                            <div class="card-pricing__text">HTML rendering </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-pricing__tarif">
+                                    <div class="card-pricing__cost">Free</div>
+                                    <a href="" class="card-pricing__btn">start free trial</a>
+                                </div>
+                            </div>
+                            <div class="pricing__card card-pricing card-pricing_purple">
+                                <div class="card-pricing__info">
+                                    <div class="card-pricing__title">Additional Mail</div>
+                                    <div class="card-pricing__subtitle card-pricing__subtitle_purple ">Only pay for what you use</div>
+                                    <div class="card-pricing__items">
+                                        <div class="card-pricing__item">
+                                            <img class="card-pricing__icon" src="./img/pricing/checkmark_active.svg" alt="">
+                                            <div class="card-pricing__text">For Large Mailing Lists</div>
+                                        </div>
+                                        <div class="card-pricing__item">
+                                            <img class="card-pricing__icon" src="./img/pricing/checkmark_active.svg" alt="">
+                                            <div class="card-pricing__text">For each additional 10,000 emails sent per month</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-pricing__tarif">
+                                    <div class="card-pricing__cost card-pricing__cost_purple">$10.00</div>
+                                    <a href="" class="card-pricing__btn card-pricing__btn_purple">start free trial</a>
+                                </div>
+                            </div>
+                            <div class="pricing__card card-pricing">
+                                <div class="card-pricing__info">
+                                    <div class="card-pricing__title">Send Mail</div>
+                                    <div class="card-pricing__subtitle">No credit card required</div>
+                                    <div class="card-pricing__items">
+                                        <div class="card-pricing__item">
+                                            <img class="card-pricing__icon" src="./img/pricing/checkmark.svg" alt="">
+                                            <div class="card-pricing__text">Single Click Distribution</div>
+                                        </div>
+                                        <div class="card-pricing__item">
+                                            <img class="card-pricing__icon" src="./img/pricing/checkmark.svg" alt="">
+                                            <div class="card-pricing__text">Send up to 10,000 emails per month.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-pricing__tarif">
+                                    <div class="card-pricing__cost">Free</div>
+                                    <a href="" class="card-pricing__btn">start free trial</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="advantages">
+                    <div class="container">
+                        <div class="advantages__title title">Lorem Ipsum is simply </div>
+                        <div class="advantages__items">
+                            <div class="advantages__item">
+                                <div class="advantages__img">
+                                    <img src="./img/advantages/grow.svg" alt="" class="advantages__icon">
+                                </div>
+                                <div class="advantages__info">
+                                    <div class="advantages__subtitle subtitle">Grow</div>
+                                    <div class="advantages__text">Grow your mailing list with a dedicated and customizable subscriber sign up page.</div>
+                                </div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages__img">
+                                    <img src="./img/advantages/choose.svg" alt="" class="advantages__icon">
+                                </div>
+                                <div class="advantages__info">
+                                    <div class="advantages__subtitle subtitle">Choose</div>
+                                <div class="advantages__text">Use pre-built templates to ensure your emails arrive looking great on all devices.</div>
+                                </div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages__img">
+                                    <img src="./img/advantages/write.svg" alt="" class="advantages__icon">
+                                </div>
+                                <div class="advantages__info">
+                                    <div class="advantages__subtitle subtitle">Write</div>
+                                    <div class="advantages__text">Create stunning emails with a simple editor and utilize free photos and giph hosting.</div>
+                                </div>
+
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages__img">
+                                    <img src="./img/advantages/send.svg" alt="" class="advantages__icon">
+                                </div>
+                                <div class="advantages__info">
+                                    <div class="advantages__subtitle subtitle">Send</div>
+                                    <div class="advantages__text">Send emails with a single click to your mailing list or to your own devices for review.</div>
+                                </div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages__img">
+                                    <img src="./img/advantages/know.svg" alt="" class="advantages__icon">
+                                </div>
+                                <div class="advantages__info">
+                                    <div class="advantages__subtitle subtitle">Know</div>
+                                <div class="advantages__text">Understand which subscribers are opening emails you send, and when they are reading.</div>
+                                </div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages__img">
+                                    <img src="./img/advantages/try.svg" alt="" class="advantages__icon">
+                                </div>
+                                <div class="advantages__info">
+                                    <div class="advantages__subtitle subtitle">Try for Free</div>
+                                <div class="advantages__text">Sign up for a free trial to start creating and sending amazing emails. No credit card required.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="creators">
+                    <div class="container">
+                        <div class="creators__title title">Built for Newsletter Creators</div>
+                        <div class="creators__body">
+                            <div class="creators__img">
+                                <div class="creators__inner1"></div>
+                                <div class="creators__inner2"></div>
+                                <div class="creators__inner3"></div>
+                                <div class="creators__inner4">
+                                </div>
+                                <div class="creators__inner5">
+                                </div>
+                                <div class="creators__twitter">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </div>
+                            </div>
+                            <div class="creators__list">
+                                <div class="creators__item">
+                                    <img src="./img/built.svg" alt="" class="creators__icon">
+                                    <div class="creators__text">
+                                        Source fresh and relevant content directly from Twitter
+                                    </div>
+                                </div>
+                                <div class="creators__item">
+                                    <img src="./img/built.svg" alt="" class="creators__icon">
+                                    <div class="creators__text">
+                                        Use our pre-built templates to spend your time writing and creating content, not tweaking email layouts
+                                    </div>
+                                </div>
+                                <div class="creators__item">
+                                    <img src="./img/built.svg" alt="" class="creators__icon">
+                                    <div class="creators__text">
+                                        Grow your mailing list without any extra effort by automatically re-tweeting anything content you plan to use in your newsletter (optional)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="beta">
+                    <div class="container">
+                        <div class="beta__info">
+                            <div class="beta__title title">Built for the Solo Startup Founder</div>
+                            <div class="beta__subtitle">A Streamlined Editor built with the Indie Hacker and Soloprenuer in mind</div>
+                        </div>
+                        <div class="beta__body">
+                            <div class="beta__content">
+                                <div class="beta__list-title subtitle">Coming soon:</div>
+                                <ul class="beta__list">
+                                    <li class="beta__li"><div>Welcome Emails</div></li>
+                                    <li class="beta__li"><div>Solutions built for your startup</div></li>
+                                    <li class="beta__li"><div>User Communication</div></li>
+                                    <li class="beta__li"><div>Community Activity Notification</div></li>
+                                    <li class="beta__li"><div>All available in the Free Tier</div></li>
+                                    <li class="beta__li"><div>Use your API keys to send email commmunications whenever you need</div></li>
+                                    <li class="beta__li"><div>Build your email templates for user communication in the editor</div></li>
+                                </ul>
+                            </div>
+                            <div id="beta__video" class="beta__video">
+                                <div id="beta__play" class="beta__play">
+                                    <a href="" id="play" class="beta__play-btn"><img src="./img/video-play.svg" alt=""></a>
+                                </span>
+                                </div>
+                                <video loop id="video" poster="./img/video-poster.jpg">
+                                    <source src="./video/video.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="beta__text">Sign Up for the free tier and contact support if you are interested in joining as a Beta use</div>
+                        <a href="" class="beta__button">use beta</a>
+                    </div>
+                </section>
+
+                <section class="getstarted">
+                    <div class="container">
+                        <div class="getstarted__body">
+                            <div class="getstarted__content">
+                                <div class="getstarted__title title">Let’s get started!</div>
+                                <div class="getstarted__text">Find our app on both the App Store or Google Play store. Alternatively, you can register on our website</div>
+                                <div class="getstarted__links">
+                                    <a href="" class="getstarted__link">
+                                        <img src="./img/getstarted/appstore.jpg" alt="">
+                                    </a>
+                                    <a href="" class="getstarted__link">
+                                        <img src="./img/getstarted/google.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="getstarted__iphone">
+                                <img src="./img/getstarted/iPhone12.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('html/footer.html', {})
+        </div>
+        <script src="js/app.min.js"></script>
+    </body>
+</html>
